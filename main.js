@@ -18,6 +18,7 @@ for (const looper of li) {
 for (const looping of fading) {
     looping.addEventListener('click', fade);
     looping.style.cursor = 'pointer';
+    looping.style.opacity = '1';
 }
 
 for (const pic of pics) {
@@ -36,7 +37,11 @@ function onClick() {
 }
 
 function fade() {
-    this.style.opacity = '0.0';
+    if (this.style.opacity === '1') {
+        this.style.opacity = '0.0';
+    } else {
+        this.style.opacity = '1';
+    }
 }
 
 function disappear(event) {
