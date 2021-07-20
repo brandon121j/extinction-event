@@ -24,7 +24,7 @@ for (const looping of fading) {
 for (const pic of pics) {
     pic.addEventListener('click', disappear);
     pic.style.cursor = 'pointer';
-    pic.style.opacity = '1';
+    // pic.style.opacity = '1';
 }
 
 function onClick() {
@@ -45,11 +45,11 @@ function fade() {
 }
 
 function disappear(event) {
-    if (event.target.style.opacity === '1') {
-        event.target.style.opacity = '0.0'
-    } else {
-        event.target.style.opacity = '1'
-    }
+    // if (event.target.style.width === '162') {
+        event.target.style.width = '0'
+    // } else {
+        // event.target.style.width = '162'
+    // }
 }
 
 function meteor(event) {
